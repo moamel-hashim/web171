@@ -9,8 +9,8 @@ function Nav () {
         <ul>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/link'>Link</Link></li>
-          <li><Link>Dropdown</Link></li>
-          <li><Link>Disabled</Link></li>
+          <li>Dropdown</li>
+          <li>Disabled</li>
         </ul>
       </div>
     </nav>
