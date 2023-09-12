@@ -24,3 +24,16 @@
 .background {
   background-color: hsla(0, 1%, 10%, 0.254);
 }
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
