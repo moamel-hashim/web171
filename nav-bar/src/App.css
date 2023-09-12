@@ -14,7 +14,7 @@
 }
 
 .gap {
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .hidden {
@@ -42,4 +42,44 @@ ul {
 body {
   background-size: cover;
   background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F0c%2F2d%2F01%2F0c2d018a44d86dc9741e6966b8e20859.jpg&f=1&nofb=1&ipt=632e8b5ce07f73e7586b4523e01f6bf05bfc18bb6c2e4314a63864729e51e3dc&ipo=images) no-repeat center fixed;
+}
+
+li {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.padding-1rem {
+  padding: 1rem 2rem;
+}
+
+nav {
+  padding: 0 0 0 2rem;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+ul div {
+    transition: background 1s;
+}
+
+
+ul div:hover {
+  background-color:  hsla(0, 0%, 100%, 0.9);
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+}
+
+.font-awesome {
+  transition: 1s;
+}
+
+.font-awesome:hover {
+  transform: rotate(90deg)
+}
+
+ul {
+  padding: 0;
 }
