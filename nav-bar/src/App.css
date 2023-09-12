@@ -22,7 +22,7 @@
 }
 
 .background {
-  background-color: hsla(0, 1%, 10%, 0.254);
+  background-color: hsla(0, 0%, 100%, 0.8);
 }
 
 ul {
@@ -39,5 +39,6 @@ ul {
 }
 
 body {
-  background-color: black;
+  background-size: cover;
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F0c%2F2d%2F01%2F0c2d018a44d86dc9741e6966b8e20859.jpg&f=1&nofb=1&ipt=632e8b5ce07f73e7586b4523e01f6bf05bfc18bb6c2e4314a63864729e51e3dc&ipo=images) no-repeat center fixed;
 }
