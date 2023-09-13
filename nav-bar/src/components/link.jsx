@@ -1,8 +1,12 @@
 
 
 function Link() {
-  return(
-    <h1>Welcome to the link page</h1>
+  return (
+    <div className="container">
+      <div className="center">
+        <h1>Welcome to the link page</h1>
+      </div>
+    </div>
   )
 }
 

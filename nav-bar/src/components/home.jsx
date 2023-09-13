@@ -2,7 +2,11 @@
 
 function Home () {
   return (
-    <h1>Welcome to the home page</h1>
+    <div className="container">
+      <div className="center">
+        <h1>Welcome to the Home page</h1>
+      </div>
+    </div>
   )
 }
 
