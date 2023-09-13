@@ -5,7 +5,6 @@ import { useState } from "react";
 
 function Nav() {
   const [isShown,setIsShown] = useState(false);
-  console.log(setIsShown)
   return (
     <nav className="background">
       <div className="flex w-100 justify-content-evenly">
@@ -20,9 +19,9 @@ function Nav() {
             <div className="padding-1rem">
               <li><Link to='/link' className="link">Link</Link></li>
             </div>
-            <div className="padding-1rem flex gap" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+            <div className="padding-1rem flex gap position-relative" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
               <li>Dropdown
-              <div className={isShown === true ? 'nested-list' : 'hidden'}>
+              <div className={isShown === true ? 'nested-list position-absolute z-index margin-top' : 'hidden'}>
                 <ul>
                   <li>action</li>
                   <li>another action</li>
@@ -31,7 +30,7 @@ function Nav() {
               </div>
               </li>
               <div>
-                <FontAwesomeIcon icon={faChevronRight} className={isShown === true ? 'font-awesome' : ''}/>
+                <FontAwesomeIcon icon={faChevronRight} className={isShown === true ? 'font-awesome' : 'font-awesome-off'}/>
               </div>
             </div>
             <div className="padding-1rem">

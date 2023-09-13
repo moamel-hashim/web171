@@ -47,6 +47,7 @@ body {
 li {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  cursor: pointer;
 }
 
 .padding-1rem {
@@ -73,13 +74,49 @@ ul div:hover {
 }
 
 .font-awesome {
-  transition: 1s;
+  transform: rotate(90deg);
+  transition: transform 1s ease;
 }
 
-.font-awesome:hover {
-  transform: rotate(90deg)
+.font-awesome-off {
+  transform: rotate(0deg);
+  transition: transform 1s ease;
 }
 
 ul {
   padding: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.z-index {
+  z-index: 999999;
+}
+
+div.nested-list {
+  margin-top: 1rem;
+}
+
+div.nested-list ul li {
+  margin-bottom: 1rem;
+  border-bottom: black solid 1px;
+  transition: background 1s;
+  padding-left: 0.5rem;
+}
+
+div.nested-list ul li:hover {
+  background-color: hsla(0, 0%, 0%, 0.121)
+}
+
+div.nested-list {
+  background-color: hsla(0, 0%, 100%, 0.9);
+  backdrop-filter: blur(10px)
 }
