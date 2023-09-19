@@ -1,6 +1,7 @@
 import React from "react";
 
-function Description (props) {
+
+export default function Description (props) {
   return (
     <div>
       <h3>Description:</h3>

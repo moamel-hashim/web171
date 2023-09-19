@@ -3,7 +3,7 @@ import Title from "./Title";
 import Description from "./Description";
 import logoFileFromSRC from "../logo.svg";
 
-function Header () {
+export default function Header () {
   return (
     <header>
 
