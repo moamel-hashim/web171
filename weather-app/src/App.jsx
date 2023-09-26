@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import React from 'react'
 import './css/App.css'
+import Background from './components/background';
 
 export default class App extends React.Component {
   constructor() {
@@ -23,7 +24,9 @@ export default class App extends React.Component {
   render() {
     console.log(this.state.data)
     return (
+      <Background>
 
+      </Background>
     )
   }
 }
