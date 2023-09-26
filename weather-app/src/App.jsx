@@ -1,13 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+import React from 'react'
+import './css/App.css'
+import Background from './components/background';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      data: []
+    }
+  }
 
-  return (
-  )
+  async componentDidMount() {
+    try {
+      const response = await fetch('https://mm214.com/demo.php');
+      const json = await response.json();
+      this.setState({data: json})
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
+  render() {
+    console.log(this.state.data)
+    return (
+      <Background>
+
+      </Background>
+    )
+  }
 }
-
-export default App
