@@ -1,16 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarker } from "@fortawesome/free-solid-svg-icons";
-import { Text } from "@chakra-ui/react";
+import { Text, Flex } from "@chakra-ui/react";
 import PropTypes from 'prop-types';
 
 export default function Location(props) {
   const { name, country } = props
   return (
     <>
+    <Flex alignItems={'baseline'} gap={'1rem'}>
       <div>
         <FontAwesomeIcon icon={faMapMarker} />
       </div>
-      <Text>{`${name}, ${country}`}</Text>
+      <Text>{`${country}, ${name}`}</Text>
+    </Flex>
     </>
   )
 }
