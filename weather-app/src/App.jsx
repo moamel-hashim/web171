@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+
 import React from 'react'
 import './css/App.css'
 import Background from './components/background';
@@ -15,18 +15,16 @@ export default class App extends React.Component {
     try {
       const response = await fetch('https://mm214.com/demo.php');
       const json = await response.json();
-      this.setState({data: json})
+      this.setState({ data: json })
     } catch (error) {
       console.log(error);
     }
 
   }
   render() {
-    console.log(this.state.data)
+    const {data} = this.state;
     return (
-      <Background>
-
-      </Background>
+      <Background data={data} />
     )
   }
 }
