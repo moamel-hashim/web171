@@ -6,3 +6,11 @@
   bottom: 0;
   background-color: rgb(71, 140, 245);
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.br {
+  font-size: 1px !important;
+}

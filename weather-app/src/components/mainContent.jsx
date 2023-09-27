@@ -19,8 +19,8 @@ export default function MainContent(props) {
       <Lottie loop animationData={cloudy} play/>
     </Center>
     <Center display={'block'} textAlign={"center"}>
-      <Text>{kelvinToFahrenheit(temp)}</Text>
-      <Text>{description}</Text>
+      <Text fontSize={"1.5rem"} fontWeight={"600"} marginBottom={"0"}>{kelvinToFahrenheit(temp)}</Text>
+      <Text fontSize={"1.1rem"} marginTop={"5px"}>{description}</Text>
     </Center>
     </>
   )
